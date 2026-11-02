@@ -114,19 +114,26 @@
 </section>
 
 <!-- SEÇÃO 3: PROVA SOCIAL -->
-<section class="band band-paper">
-  <div class="wrap stack">
+<section class="band band-paper band-carousel" id="relatos">
+  <div class="wrap">
     <div style="display:grid;gap:1rem">
       <h2>Você não é o único professor cansado de improvisar!</h2>
       <p class="lead">Veja o que professores e instrutores relatam na pesquisa de público:</p>
     </div>
+  </div>
 
-    <div class="reports">
-      <blockquote class="report"><div class="report-form" aria-hidden="true"><span class="radio"></span><span class="bar-q"></span></div><p>"Fico sem ideia de treino e repito os mesmos exercícios toda aula."</p></blockquote>
-      <blockquote class="report"><div class="report-form" aria-hidden="true"><span class="radio"></span><span class="bar-q"></span></div><p>"Perco tempo montando a aula / planejando o treino."</p></blockquote>
-      <blockquote class="report"><div class="report-form" aria-hidden="true"><span class="radio"></span><span class="bar-q"></span></div><p>"Só acho vídeo solto de luta e técnica — nada pronto pra dar aula."</p></blockquote>
+  <!-- Carrossel infinito: os cards são duplicados e animados pelo script.js -->
+  <div class="carousel" role="group" aria-label="Relatos da pesquisa de público">
+    <div class="carousel-track">
+      <div class="carousel-group">
+        <blockquote class="report"><div class="report-form" aria-hidden="true"><span class="radio"></span><span class="bar-q"></span></div><p>"Fico sem ideia de treino e repito os mesmos exercícios toda aula."</p></blockquote>
+        <blockquote class="report"><div class="report-form" aria-hidden="true"><span class="radio"></span><span class="bar-q"></span></div><p>"Perco tempo montando a aula / planejando o treino."</p></blockquote>
+        <blockquote class="report"><div class="report-form" aria-hidden="true"><span class="radio"></span><span class="bar-q"></span></div><p>"Só acho vídeo solto de luta e técnica — nada pronto pra dar aula."</p></blockquote>
+      </div>
     </div>
+  </div>
 
+  <div class="wrap stack">
     <p class="note"><svg class="i" aria-hidden="true"><use href="#i-info"/></svg><span>Relatos da pesquisa de público. Não são avaliações de compradores do produto.</span></p>
 
     <p class="lead">Agora você pode ter 552 materiais organizados em um só lugar, sem precisar ficar procurando exercícios soltos na internet.</p>
@@ -137,7 +144,7 @@
 <!-- SEÇÃO 4: BÔNUS EXCLUSIVOS -->
 <section class="band band-dark">
   <div class="wrap stack">
-    <h2>Além de tudo isso, você recebe 4 bônus grátis</h2>
+    <h2 class="title-center">Além de tudo isso, você recebe 4 bônus grátis</h2>
 
     <!-- SUBSTITUIR cada .cover por <img src="bonus-0X.png" alt="..."> (sugestão: 500 x 700 px) -->
     <div class="bonuses">
@@ -183,7 +190,7 @@
 <!-- SEÇÃO 5: OFERTA ESPECIAL -->
 <section class="band" id="oferta">
   <div class="wrap stack">
-    <h2 class="offer-title">Nunca Mais Fique Sem Ideias!</h2>
+    <h2 class="title-center">Nunca Mais Fique Sem Ideias!</h2>
 
     <div class="plans">
       <article class="plan plan-premium">
