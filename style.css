@@ -34,7 +34,7 @@ a:focus-visible, summary:focus-visible, .gallery:focus-visible { outline: 3px so
 .stack > * { min-width: 0; }
 
 h1, h2, h3 { font-family: var(--display); font-weight: 800; text-wrap: balance; }
-h1 { font-size: clamp(2.75rem, 11.5vw, 4rem); line-height: .98; letter-spacing: -.005em; }
+h1 { font-size: clamp(2.1rem, 8.6vw, 3.25rem); line-height: .98; letter-spacing: -.005em; }
 h2 { font-size: clamp(2.2rem, 8.4vw, 3.5rem); line-height: 1.02; max-width: 20ch; }
 .lead { font-size: clamp(1.15rem, 3.6vw, 1.3rem); line-height: 1.45; }
 .punch { font-family: var(--display); font-weight: 800; font-size: clamp(1.6rem, 5.8vw, 2.2rem); line-height: 1.1; text-wrap: balance; }
@@ -77,8 +77,6 @@ h2 { font-size: clamp(2.2rem, 8.4vw, 3.5rem); line-height: 1.02; max-width: 20ch
 .cover-top { font: 700 8cqw/1 var(--display); text-transform: uppercase; letter-spacing: .14em; }
 .cover-num { font: 800 48cqw/.86 var(--display); margin-top: auto; letter-spacing: -.01em; }
 .cover-sub { font: 700 10cqw/1.04 var(--display); margin-top: 3cqw; }
-.ropes { display: grid; gap: 2.6cqw; margin-top: 7cqw; }
-.ropes i { display: block; height: 1cqw; min-height: 1px; background: var(--white); }
 
 .page {
   container-type: inline-size; aspect-ratio: 5 / 7; background: var(--white);
@@ -111,20 +109,8 @@ h2 { font-size: clamp(2.2rem, 8.4vw, 3.5rem); line-height: 1.02; max-width: 20ch
 .points { display: grid; grid-template-columns: repeat(3, 1fr); gap: .6rem; width: 100%; font-weight: 600; font-size: .95rem; line-height: 1.2; }
 .points li { display: flex; flex-direction: column; align-items: center; gap: .4rem; text-align: center; min-width: 0; }
 .points .i { color: var(--red-bright); }
-.seal-row { display: flex; align-items: center; justify-content: center; gap: 1.25rem; }
-.seal-sm { width: 84px; height: 84px; flex: none; }
-.secure { display: flex; align-items: center; gap: .55rem; font-weight: 600; font-size: .95rem; color: var(--muted-dark); }
 
-.mock { position: relative; width: min(100%, 460px); margin-inline: auto; padding-block: 5% 3%; }
-.mock-ropes { position: absolute; inset: 24% -6% auto; display: grid; gap: clamp(26px, 7vw, 44px); }
-.mock-ropes i { display: block; height: 2px; background: var(--line-dark); }
-.mock-set { position: relative; display: grid; grid-template-columns: 1fr; justify-items: center; }
-.mock-set > * { grid-area: 1 / 1; }
-.mock-set .cover { width: 58%; z-index: 2; }
-.mock-set .page { width: 46%; }
-.mock-set .pg-a { justify-self: start; transform: rotate(-7deg) translate(4%, 7%); }
-.mock-set .pg-b { justify-self: end; transform: rotate(7deg) translate(-4%, 7%); }
-.hero { overflow: hidden; }
+.hero-media img { width: 100%; height: auto; border-radius: 8px; }
 
 /* 2. O que você recebe */
 .items { display: grid; gap: 2rem; }
@@ -248,7 +234,7 @@ h2 { font-size: clamp(2.2rem, 8.4vw, 3.5rem); line-height: 1.02; max-width: 20ch
   .footer-top { grid-template-columns: 1fr auto; align-items: center; justify-items: start; }
 }
 @media (min-width: 960px) {
-  .hero-grid { grid-template-columns: 1.08fr .92fr; grid-template-areas: "copy media" "proof proof"; align-items: center; column-gap: 3.5rem; }
+  .hero-grid { grid-template-columns: 1fr 1fr; grid-template-areas: "copy media" "proof proof"; align-items: center; column-gap: 3.5rem; }
   .hero-proof { border-top: 1px solid var(--line-dark); padding-top: 2rem; }
 }
 @media (prefers-reduced-motion: reduce) {
