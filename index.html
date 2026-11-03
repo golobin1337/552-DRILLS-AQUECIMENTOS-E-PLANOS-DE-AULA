@@ -22,10 +22,9 @@
   <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></symbol>
   <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.500 4.500 4.500L19 7.500"/></symbol>
   <symbol id="i-gift" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7M7.500 8a2.500 2.500 0 0 1 0-5C10.500 3 12 8 12 8s1.500-5 4.500-5a2.500 2.500 0 0 1 0 5"/></symbol>
-  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
-  <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.500 10.900c.6.500 1 1.200 1 2.100h5c0-.9.400-1.600 1-2.100A6 6 0 0 0 12 3z"/></symbol>
   <symbol id="i-list" viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11M4 6h.01M4 12h.01M4 18h.01"/></symbol>
-  <symbol id="i-repeat" viewBox="0 0 24 24"><path d="M17 3l3 3-3 3M4 11V9a3 3 0 0 1 3-3h13M7 21l-3-3 3-3M20 13v2a3 3 0 0 1-3 3H4"/></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5zM3 12.500l9 5 9-5M3 17l9 5 9-5"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="4"/><path d="M2 21v-1a6 6 0 0 1 6-6h2a6 6 0 0 1 6 6v1M16 4.300a4 4 0 0 1 0 7.400M22 21v-1a6 6 0 0 0-4-5.700"/></symbol>
   <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.500" cy="9.500" r="1.500"/><path d="m21 16-5-5L5 20"/></symbol>
   <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
   <symbol id="seal" viewBox="0 0 220 220">
@@ -64,44 +63,71 @@
   </div>
 </section>
 
-<!-- SEÇÃO 2: O QUE VOCÊ RECEBE -->
-<section class="band">
-  <div class="wrap stack">
-    <h2>Tudo que você precisa para preparar suas aulas de Muay Thai sem começar do zero!</h2>
+<!-- SEÇÃO 2: PRÉVIA DO CONTEÚDO -->
+<section class="band band-paper band-carousel" id="previa">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>CONHEÇA OS 552 MATERIAIS POR DENTRO</h2>
+      <p class="lead">Confira uma amostra dos 350 drills, 100 aquecimentos e 102 planos de aula de Muay Thai prontos para aplicar.</p>
+    </div>
+  </div>
 
-    <div class="items">
-      <div class="item">
-        <h3><span class="num">350</span> Drills de Muay Thai</h3>
-        <p>Combinações de golpes, manoplas, esquivas, defesas e clinch para variar suas aulas.</p>
-      </div>
-      <div class="item">
-        <h3><span class="num">100</span> Aquecimentos Prontos</h3>
-        <p>Exercícios técnicos, dinâmicos e funcionais para iniciar seus treinos com mais variedade.</p>
-      </div>
-      <div class="item">
-        <h3><span class="num">102</span> Planos de Aula Prontos</h3>
-        <p>Aulas organizadas do início ao fim para turmas iniciantes e intermediárias.</p>
+  <!-- Carrossel infinito: os cards são duplicados e animados pelo script.js -->
+  <div class="carousel" role="group" aria-label="Amostra das páginas dos PDFs">
+    <div class="carousel-track">
+      <div class="carousel-group">
+        <figure class="carousel-img"><img src="assets/1_781647454.webp" width="468" height="661" loading="lazy" alt="Página do material: Aquecimento 01: Aquecimento Dinâmico"></figure>
+        <figure class="carousel-img"><img src="assets/segunda.webp" width="467" height="660" loading="lazy" alt="Página do material: Plano de Aula: Aula Completa de Muay Thai"></figure>
+        <figure class="carousel-img"><img src="assets/42257787_016c_4829_ba73_da97b86650f3_1.webp" width="467" height="660" loading="lazy" alt="Página do material: Roteiro de Aula: Muay Thai Infantil"></figure>
+        <figure class="carousel-img"><img src="assets/2_495.webp" width="468" height="661" loading="lazy" alt="Página do material: Aquecimento 02: Mobilidade Articular"></figure>
+        <figure class="carousel-img"><img src="assets/3_4070026.webp" width="468" height="661" loading="lazy" alt="Página do material: Aquecimento 03: Aquecimento com Deslocamento"></figure>
+        <figure class="carousel-img"><img src="assets/4_2823785.webp" width="468" height="661" loading="lazy" alt="Página do material: Aquecimento 04: Aquecimento em Dupla"></figure>
+        <figure class="carousel-img"><img src="assets/5_951.webp" width="468" height="661" loading="lazy" alt="Página do material: Drill 01: Jab, Direto e Low Kick"></figure>
+        <figure class="carousel-img"><img src="assets/7_94824.webp" width="468" height="661" loading="lazy" alt="Página do material: Drill 03: Soco e Chute Frontal"></figure>
+        <figure class="carousel-img"><img src="assets/8_20.webp" width="468" height="661" loading="lazy" alt="Página do material: Drill 04: Defesa e Contra-Ataque"></figure>
+        <figure class="carousel-img"><img src="assets/9_426325.webp" width="468" height="661" loading="lazy" alt="Página do material: Drill 05: Clinch e Joelhada"></figure>
+        <figure class="carousel-img"><img src="assets/10_1.webp" width="468" height="661" loading="lazy" alt="Página do material: Drill 06: Contra-Ataque em Dupla"></figure>
       </div>
     </div>
-
-    <!-- Recorte de assets/hero.webp feito no style.css (.inside). Pode trocar por <img> com as páginas reais do PDF. -->
-    <div class="inside" role="img" aria-label="Duas páginas internas do material: um drill de combinação básica de chutes e um exercício de base com empurra-empurra"></div>
-
-    <p class="punch">São 552 materiais prontos para consultar e aplicar!</p>
-
-    <ul class="benefits">
-      <li><svg class="i" aria-hidden="true"><use href="#i-clock"/></svg>Pare de perder horas procurando exercícios.</li>
-      <li><svg class="i" aria-hidden="true"><use href="#i-bulb"/></svg>Tenha novas ideias para suas aulas.</li>
-      <li><svg class="i" aria-hidden="true"><use href="#i-list"/></svg>Organize seus treinos com mais facilidade.</li>
-      <li><svg class="i" aria-hidden="true"><use href="#i-repeat"/></svg>Mantenha suas aulas variadas e dinâmicas.</li>
-    </ul>
-
-    <p class="punch red">Abra, escolha e aplique!</p>
-    <div class="cta-box"><a class="cta" href="#oferta">Quero meus 552 materiais <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
   </div>
 </section>
 
-<!-- SEÇÃO 3: PROVA SOCIAL -->
+<!-- SEÇÃO 3: TUDO O QUE VOCÊ VAI RECEBER -->
+<section class="band">
+  <div class="wrap stack">
+    <div class="section-head">
+      <h2>TUDO O QUE VOCÊ VAI RECEBER</h2>
+      <p class="lead">Materiais práticos e organizados para economizar seu tempo e variar suas aulas de Muay Thai.</p>
+    </div>
+
+    <div class="features">
+      <article class="feature">
+        <span class="feature-icon"><svg class="i" aria-hidden="true"><use href="#i-layers"/></svg></span>
+        <h3>552 Materiais Prontos</h3>
+        <p>350 drills, 100 aquecimentos e 102 planos de aula para consultar e aplicar.</p>
+      </article>
+      <article class="feature">
+        <span class="feature-icon"><svg class="i" aria-hidden="true"><use href="#i-list"/></svg></span>
+        <h3>Conteúdo Organizado</h3>
+        <p>Exercícios separados por categoria, objetivo e nível de dificuldade.</p>
+      </article>
+      <article class="feature">
+        <span class="feature-icon"><svg class="i" aria-hidden="true"><use href="#i-users"/></svg></span>
+        <h3>Aulas para Iniciantes e Intermediários</h3>
+        <p>Materiais para variar os treinos e facilitar o planejamento das turmas.</p>
+      </article>
+      <article class="feature">
+        <span class="feature-icon"><svg class="i" aria-hidden="true"><use href="#i-file"/></svg></span>
+        <h3>PDFs Ilustrados</h3>
+        <p>Orientações práticas para acessar pelo celular, computador ou imprimir.</p>
+      </article>
+    </div>
+
+    <div class="cta-box"><a class="cta" href="#oferta">QUERO MEUS 552 MATERIAIS <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+  </div>
+</section>
+
+<!-- SEÇÃO 4: PROVA SOCIAL -->
 <section class="band band-paper band-carousel" id="relatos">
   <div class="wrap">
     <div class="section-head">
@@ -114,14 +140,14 @@
   <div class="carousel" role="group" aria-label="Relatos da pesquisa de público">
     <div class="carousel-track">
       <div class="carousel-group">
-        <!-- SUBSTITUIR cada .report-slot por <figure class="report-img"><img src="assets/relato-1.webp" width="800" height="1000" alt="Relato da pesquisa: ..."></figure> (sugestão: 800 x 1000 px).
+        <!-- SUBSTITUIR cada .img-slot por <figure class="carousel-img"><img src="assets/relato-1.webp" width="800" height="1000" alt="Relato da pesquisa: ..."></figure> (sugestão: 800 x 1000 px).
              Textos dos relatos, para usar no alt:
              "Fico sem ideia de treino e repito os mesmos exercícios toda aula."
              "Perco tempo montando a aula / planejando o treino."
              "Só acho vídeo solto de luta e técnica — nada pronto pra dar aula." -->
-        <div class="report-slot" role="img" aria-label="Espaço para a imagem do relato 1"><svg class="i" aria-hidden="true"><use href="#i-image"/></svg><span>Imagem · Relato 1</span></div>
-        <div class="report-slot" role="img" aria-label="Espaço para a imagem do relato 2"><svg class="i" aria-hidden="true"><use href="#i-image"/></svg><span>Imagem · Relato 2</span></div>
-        <div class="report-slot" role="img" aria-label="Espaço para a imagem do relato 3"><svg class="i" aria-hidden="true"><use href="#i-image"/></svg><span>Imagem · Relato 3</span></div>
+        <div class="img-slot" role="img" aria-label="Espaço para a imagem do relato 1"><svg class="i" aria-hidden="true"><use href="#i-image"/></svg><span>Imagem · Relato 1</span></div>
+        <div class="img-slot" role="img" aria-label="Espaço para a imagem do relato 2"><svg class="i" aria-hidden="true"><use href="#i-image"/></svg><span>Imagem · Relato 2</span></div>
+        <div class="img-slot" role="img" aria-label="Espaço para a imagem do relato 3"><svg class="i" aria-hidden="true"><use href="#i-image"/></svg><span>Imagem · Relato 3</span></div>
       </div>
     </div>
   </div>
@@ -132,7 +158,7 @@
   </div>
 </section>
 
-<!-- SEÇÃO 4: BÔNUS EXCLUSIVOS -->
+<!-- SEÇÃO 5: BÔNUS EXCLUSIVOS -->
 <section class="band band-dark">
   <div class="wrap stack">
     <h2>Além de tudo isso, você recebe 4 bônus grátis</h2>
@@ -177,7 +203,7 @@
   </div>
 </section>
 
-<!-- SEÇÃO 5: OFERTA ESPECIAL -->
+<!-- SEÇÃO 6: OFERTA ESPECIAL -->
 <section class="band" id="oferta">
   <div class="wrap stack">
     <h2>Nunca Mais Fique Sem Ideias!</h2>
@@ -214,7 +240,7 @@
   </div>
 </section>
 
-<!-- SEÇÃO 6: GARANTIA -->
+<!-- SEÇÃO 7: GARANTIA -->
 <section class="band band-dark">
   <div class="wrap guarantee">
     <svg class="seal-lg" viewBox="0 0 220 220" role="img" aria-label="Selo de garantia de 15 dias"><use href="#seal"/></svg>
@@ -228,7 +254,7 @@
   </div>
 </section>
 
-<!-- SEÇÃO 7: PERGUNTAS FREQUENTES -->
+<!-- SEÇÃO 8: PERGUNTAS FREQUENTES -->
 <section class="band">
   <div class="wrap faq-wrap stack">
     <h2>Perguntas Frequentes</h2>

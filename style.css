@@ -85,23 +85,16 @@ h2::after { content: ""; display: block; width: 56px; height: 4px; margin: .9rem
 .points li { display: flex; flex-direction: column; align-items: center; gap: .4rem; text-align: center; min-width: 0; }
 .points .i { color: var(--red-bright); }
 
-/* 2. O que você recebe */
-.items { display: grid; gap: 1rem; }
-.item { display: grid; gap: .6rem; align-content: start; justify-items: center; padding: 1.75rem 1.5rem; text-align: center; background: var(--black); color: var(--white); border-radius: var(--radius); }
-.item h3 { font-size: 1.7rem; line-height: 1.05; }
-.item .num { display: block; font-size: clamp(4.5rem, 19vw, 5.5rem); line-height: .9; color: var(--red-bright); }
-.item p { color: var(--muted-dark); max-width: 30ch; }
-/* Recorte das duas páginas internas que aparecem em assets/hero.webp */
-.inside {
-  width: 100%; max-width: 560px; margin-inline: auto; aspect-ratio: 448 / 320; border-radius: var(--radius);
-  background: var(--black) url("assets/hero.webp") 88.48% 8.21% / 196.875% auto no-repeat;
-  box-shadow: 0 26px 50px -24px rgba(13, 10, 11, .75);
-}
-.benefits { display: grid; gap: .9rem; width: 100%; max-width: 860px; margin-inline: auto; padding: 1.5rem 1.25rem; background: var(--paper); border-radius: var(--radius); font-size: 1.1rem; font-weight: 500; line-height: 1.3; }
-.benefits li { display: grid; grid-template-columns: auto 1fr; gap: .85rem; align-items: center; }
-.benefits .i { width: 44px; height: 44px; padding: 11px; border-radius: 50%; background: var(--red-tint); color: var(--red); }
+/* 2. Prévia e 3. Tudo o que você vai receber */
+.features { display: grid; gap: 1rem; }
+.feature { display: grid; gap: .7rem; align-content: start; justify-items: center; padding: 1.75rem 1.4rem; text-align: center; background: var(--black); color: var(--white); border-radius: var(--radius); }
+.feature > * { min-width: 0; }
+.feature-icon { display: grid; place-items: center; width: 56px; height: 56px; border-radius: 50%; background: rgba(255, 90, 96, .16); color: var(--red-bright); }
+.feature-icon .i { width: 28px; height: 28px; }
+.feature h3 { font-size: 1.65rem; line-height: 1.05; }
+.feature p { color: var(--muted-dark); }
 
-/* 3. Prova social */
+/* 4. Carrosséis e prova social */
 .band-carousel { display: grid; gap: clamp(2rem, 6vw, 3rem); }
 .band-carousel > * { min-width: 0; }
 .carousel { overflow-x: auto; padding: 0 max(20px, env(safe-area-inset-right, 0px)) 1.5rem max(20px, env(safe-area-inset-left, 0px)); margin-bottom: -1.5rem; }
@@ -116,12 +109,13 @@ h2::after { content: ""; display: block; width: 56px; height: 4px; margin: .9rem
 .carousel-group { display: flex; gap: 1rem; padding-right: 1rem; }
 .carousel-group > * { flex: 0 0 min(66vw, 280px); }
 @keyframes carousel-loop { to { transform: translateX(-50%); } }
-.report-slot {
+.img-slot {
   display: grid; place-content: center; justify-items: center; gap: .6rem; aspect-ratio: 4 / 5; border-radius: var(--radius);
   background: var(--white); border: 2px dashed #c9c1bf; color: var(--muted); font-size: .85rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase;
 }
-.report-slot .i { width: 40px; height: 40px; color: var(--red); stroke-width: 1.5; }
-.report-img img { width: 100%; height: auto; border-radius: var(--radius); box-shadow: 0 14px 28px -20px rgba(13, 10, 11, .55); }
+.img-slot .i { width: 40px; height: 40px; color: var(--red); stroke-width: 1.5; }
+#previa .carousel-group > * { flex-basis: min(78vw, 340px); }
+.carousel-img img { width: 100%; height: auto; border-radius: var(--radius); box-shadow: 0 14px 28px -20px rgba(13, 10, 11, .55); }
 
 /* 4. Bônus */
 .bonuses { display: grid; gap: 1rem; }
@@ -201,11 +195,13 @@ h2::after { content: ""; display: block; width: 56px; height: 4px; margin: .9rem
   .plan { padding-inline: 1.75rem; }
 }
 @media (min-width: 760px) {
-  .items { grid-template-columns: repeat(3, 1fr); }
-  .benefits { grid-template-columns: 1fr 1fr; gap: 1.1rem 1.5rem; padding: 1.75rem 2rem; }
+  .features { grid-template-columns: 1fr 1fr; }
   .bonuses { grid-template-columns: 1fr 1fr; gap: 1.25rem; }
   .footer-grid { text-align: left; }
   .footer-top { grid-template-columns: 1fr auto; align-items: center; justify-items: start; }
+}
+@media (min-width: 1040px) {
+  .features { grid-template-columns: repeat(4, 1fr); }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
