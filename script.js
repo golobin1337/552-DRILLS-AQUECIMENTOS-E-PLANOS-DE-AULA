@@ -1,10 +1,3 @@
-// LINK DE CHECKOUT: cole aqui a URL do Plano Premium na sua plataforma de pagamento.
-// Enquanto estiver vazio, os botões levam à seção de oferta.
-var CHECKOUT = '';
-document.querySelectorAll('[data-checkout]').forEach(function (link) {
-  if (CHECKOUT) link.href = CHECKOUT;
-});
-
 // CARROSSEL INFINITO: repete os cards até cobrir telas largas e duplica o grupo para o loop não ter emenda.
 // Quem pediu menos movimento no sistema vê os cards parados, com rolagem manual.
 var carousel = document.querySelector('.carousel');
