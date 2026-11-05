@@ -39,7 +39,7 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--red-bright); o
 .stack > * { min-width: 0; }
 
 h1, h2, h3 { font-family: var(--display); font-weight: 800; text-wrap: balance; }
-h1 { font-size: clamp(1.2rem, 6.2vw, 3.25rem); line-height: 1.05; letter-spacing: -.005em; }
+h1 { font-size: clamp(1.2rem, 7vw, 3.75rem); line-height: 1.05; letter-spacing: -.005em; }
 h2 { font-size: clamp(2.1rem, 7.8vw, 3.25rem); line-height: 1.04; max-width: 20ch; margin-inline: auto; text-align: center; }
 h2::after { content: ""; display: block; width: 56px; height: 4px; margin: .9rem auto 0; border-radius: 2px; background: var(--red); }
 .lead { font-size: clamp(1.15rem, 3.6vw, 1.3rem); line-height: 1.45; }
